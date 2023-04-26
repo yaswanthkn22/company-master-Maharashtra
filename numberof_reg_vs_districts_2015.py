@@ -9,7 +9,7 @@ districts = {}
 registrations_count = {}
 
 def district_pins():
-
+    """Getting pins and Dsitricts by reading districts file"""
     with open('data/districts.csv',encoding='utf-8',errors='ignore') as csv_file:
 
         csv_reader = csv.DictReader(csv_file)
@@ -19,7 +19,7 @@ def district_pins():
 
 
 def fill_registration_count(eachrow):
-
+    """fill registration count of each district by using districts Dictionary"""
     address = eachrow['Registered_Office_Address'].strip()
     pin = address[len(address)-6:]
     date = eachrow['DATE_OF_REGISTRATION'].strip()
@@ -33,7 +33,7 @@ def fill_registration_count(eachrow):
 
 
 def calculate():
-
+    """reading csv file and calling fill_registration_count()"""
     with open('data/Maharashtra.csv',encoding='utf-8',errors='ignore') as csv_file:
 
         csv_reader = csv.DictReader(csv_file)
@@ -42,7 +42,7 @@ def calculate():
 
 
 def plot():
-
+    """Ploting horizantal bar graph"""
     counts = []
 
     district_list = []
@@ -63,6 +63,7 @@ def plot():
     plt.show()
 
 def exicute():
+    """CAlling districts_pins() , calculate() , plot()"""
     district_pins()
     calculate()
     plot()
