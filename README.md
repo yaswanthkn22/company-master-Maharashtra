@@ -38,4 +38,4 @@ From the column, DATE_OF_REGISTRATION parse out the registration year. Using thi
         sudo apt-get install python3-tk
    ```
 * run the corresponding programs for each question
->>>>>>> 3238c8e (Adding README.md file)
+
