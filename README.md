@@ -1,9 +1,9 @@
 # Company Master - Maharashtra
 
 
-## Aim
+## Description
 
-To convert raw open data into plots, that tell a story on the state of company registration in Maharashtra.
+This project is to convert data of Maharashtra's Investments over years into Plots that tell some story.
 
 ## Data Source
 
@@ -17,7 +17,9 @@ To convert raw open data into plots, that tell a story on the state of company r
 2. Bar Plot of company registration by year
 From the column, DATE_OF_REGISTRATION parse out the registration year. Using this data, plot a bar plot of the number of company registrations, vs. year.
 
-3. Company registrations in the year 2015 in each district of Maharashtra. Districts and their pin codes are sourced from [here]()
+3. Company registrations in the year 2015 in each district of Maharashtra. Districts and their pin codes are sourced from [here](https://www.goldenchennai.com/pin-code/maharashtra-postal-code/)
+  
+4. Grouped Bar Plot of top 5 Prinicipal Business Activity for last 10 years
 
 
 ## Instructions
@@ -38,4 +40,9 @@ From the column, DATE_OF_REGISTRATION parse out the registration year. Using thi
         sudo apt-get install python3-tk
    ```
 * run the corresponding programs for each question
+
+## Credits 
+
+* It is done by Yaswanth K N
+* special mention to the Data Contributors
 
