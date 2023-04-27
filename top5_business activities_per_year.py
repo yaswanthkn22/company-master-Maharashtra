@@ -65,6 +65,7 @@ def plot():
     years = list(years_activity_count.keys())
     years.sort()
     x_axis =[j for j in range(0,len(years))]
+    ticks = x_axis.copy()
     width=0.1
     print(x_axis)
     plt.title('Each years Top 5 Principle Business Acitvity')
@@ -74,7 +75,7 @@ def plot():
         plt.bar(x_axis , data_list[i],width=width,label= activity_list[i])
         x_axis = [j+width for j in x_axis]
     
-    plt.xticks(x_axis,years)
+    plt.xticks(ticks,years)
     plt.show()
 
 def exicute():
